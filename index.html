@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Panic Button</title>
+        <link rel="stylesheet" href="themes/PanicButton.min.css" />
+
+        <link rel="stylesheet" href="jquery-mobile/jquery.mobile.structure-1.3.1.min.css" type="text/css" />
+        <script src="jquery-mobile/jquery-1.9.1.min.js"></script>  
+        <script src="jquery-mobile/jquery.mobile-1.3.1.min.js"></script>
+
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile.structure-1.3.1.min.css" />
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+
+        <script src="js/modernizr.custom.71192.js"></script>
+        <script src="js/database.js"></script>
+
+        <script type="text/javascript" charset="utf-8" src="apis/geolocation.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/cordova-2.3.0.js"></script>
+        
+    </head>
+    <body>
+        <div data-role="page" data-theme="a">
+            <div data-role="header" data-position="inline">
+                <h1>Panic Button</h1>
+            </div>
+            <div data-role="content" data-theme="a">
+                <p>Bienvenido a Panic Button, presiona el siguiente bot&oacute;n para emitir una alerta:</p>             
+
+            </div>
+            <div data-role="content" data-theme="a">
+                <button class="circle" id="btnAlerta" onclick="getCurrentPosition();">&iexcl;Alerta!</button>              
+            </div>
+            <div data-role="content" data-theme="a" style="display:none" id="activaAlarma">
+                <div id="cur_position"></div>
+                <img id="map"/>	    
+            </div>
+            <div data-role="content" data-theme="a">
+                <button class="circle" id="btnAlerta" onclick="location.href='configuracion/index.html';">Configuracion</button>              
+            </div>
+        </div>
+    </body>
+</html>

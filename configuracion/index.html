@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Configuraci&oacute;n Panic Button</title>
+        <link rel="stylesheet" href="themes/Bootstrap.css">
+        <link rel="stylesheet" href="themes/jqm-icon-pack-1.1.1-fa.css">
+
+        <link rel="stylesheet" href="../jquery-mobile/jquery.mobile.structure-1.3.1.min.css" type="text/css" />
+        <script src="../jquery-mobile/jquery-1.9.1.min.js"></script>  
+        <script src="../jquery-mobile/jquery.mobile-1.3.1.min.js"></script>
+
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile.structure-1.3.1.min.css" />
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+        <script src="js/modernizr.custom.71192.js"></script>
+        <script src="js/database.js"></script>
+
+        <script src="js/jquery.js"></script>
+        <script src="js/cordova-2.3.0.js"></script>
+    </head>
+    <body>
+        <div data-role="page" data-theme="a">
+            <div data-role="header" data-position="inline">
+                <h1>Configuraci&oacute;n</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="index.html" data-icon="home" class="ui-btn-active">Ajustes</a></li>
+                        <li><a href="buttons.html" data-icon="th-large">Cuenta</a></li>
+                        <li><a href="listviews.html" data-icon="list">Contactos</a></li>
+                        <li><a href="nav.html" data-icon="cogs">Redes</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div data-role="content" data-theme="a">
+
+                <h2>Configuraci&oacute;n de la Aplicaci&oacute;n</h2>
+
+                <p>
+                    Ajuste la configuraci&oacute;n a su preferencia:
+                </p>
+                <button onClick="checarStorage();">Checar Storage</button>
+
+                <form action="guardarConfig1.html" method="get">
+                    <div data-role="fieldcontain">
+                        <label for="slider2">Vibracion:</label>
+                        <select name="slider2" id="slider2" data-role="slider">
+                            <option value="off">Off</option>
+                            <option value="on">On</option>
+                        </select>
+                    </div>
+
+                    <div class="ui-body ui-body-b">
+                        <fieldset class="ui-grid-a">
+                            <div class="ui-block-a"><button type="submit" data-theme="d">Cancel</button></div>
+                            <div class="ui-block-b"><button type="submit" data-theme="a">Submit</button></div>
+                        </fieldset>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </body>
+</html>
